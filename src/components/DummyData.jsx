@@ -5,6 +5,7 @@ export const moviesList = [
     posterUrl: `https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV4x6-ZqL7_9_g_8a_diK1aLW5nmILnb0JS0aaSq1gbVwyFxtd`,
     description: `Leo, an android super-soldier, and Harp, a drone pilot, face several difficulties while trying to stop a nuclear attack.`,
     rate: 5,
+    trailer: "https://www.youtube.com/embed/u8ZsUivELbs",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const moviesList = [
     posterUrl: `https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2J2TCxADB5Iv2UbEseD6CefCWWOwvcaf-R1LnInRaOuCvvnnJ`,
     description: `When a Chinese consul's young daughter is kidnapped, Hong Kong Detective Lee must team up with Carter, a loud-mouthed LA detective.`,
     rate: 5,
+    trailer: "https://www.youtube.com/embed/JMiFsFQcFLE",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const moviesList = [
     posterUrl: `https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwR-AxgUm8n3Kk1MM_501L96N7vc3oTiArycu3llkEgdncojTH`,
     description: `Lenny Feder moves his family to his hometown and looks forward to spending time with his old friends. However, he and his companions soon face bizarre situations and new enemies.`,
     rate: 4,
+    trailer: "https://www.youtube.com/embed/a_c3hW0Uyvc",
   },
   {
     id: 4,
@@ -26,6 +29,15 @@ export const moviesList = [
     posterUrl: `https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3484/34845458_so.jpg`,
     description: `Phil ignores all social interactions and hobbies in favour of constantly being on his smartphone. All of this changes when he downloads an artificial intelligence that soon bonds with him.`,
     rate: 5,
+    trailer: "https://www.youtube.com/embed/qy_hmRphp50",
+  },
+  {
+    id: 5,
+    title: `John Wick 3`,
+    posterUrl: `https://play-lh.googleusercontent.com/NkU10ihpHm7nEnj-jL3UUL214Xr1t54muCbbhn_asQ5Wqx095EnqbHDl1dO7hX8_cIo4XN5rvZ3Butbr1A`,
+    description: `John Wick is declared excommunicado and a hefty bounty is set on him after he murders an international crime lord.`,
+    rate: 5,
+    trailer: "https://www.youtube.com/embed/M7XM597XO94",
   },
   {
     id: 6,
@@ -39,6 +51,7 @@ export const moviesList = [
   world, across the dance floor, trapped in a secluded prison, into the jungle and, worst of all for 
   them, constantly into each other's company.`,
     rate: 5,
+    trailer: "https://www.youtube.com/embed/Pj0wz7zu3Ms",
   },
   {
     id: 7,
@@ -47,6 +60,7 @@ export const moviesList = [
     description: `Fatherhood is brought to another level as Adam Sandler employs his unique brand of 
   humor to face the challenges of parenthood.`,
     rate: 5,
+    trailer: "https://www.youtube.com/embed/J_l5fMb1oxg",
   },
   {
     id: 8,
@@ -58,6 +72,7 @@ export const moviesList = [
   daughter, Dan Forester teams up with a brilliant scientist and his estranged father to rewrite the 
   planet’s fate.`,
     rate: 4,
+    trailer: "https://www.youtube.com/embed/WOx8TZFvfsw",
   },
   {
     id: 9,
@@ -67,13 +82,15 @@ export const moviesList = [
     seeking justice for the murder of his pregnant wife in Without Remorse, the explosive origin story 
     of action hero John Clark`,
     rate: 3,
+    trailer: "https://www.youtube.com/embed/e-rw2cxFVLg",
   },
   {
     id: 10,
-    title: `Outlander`,
-    posterUrl: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4cva-1lP7BWHGxzViMxx2HeA9Ah4HAjwkMQGNb8a_zwfxF9Q8`,
-    description: `A man from another world crash lands on Earth during the age of the Vikings.`,
+    title: `Extraction`,
+    posterUrl: `https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRELEr5bWH1Z9ZlYjofDbRoW0ToFJop6YlcJuVU8lAYt2peph_n`,
+    description: `A black-market mercenary who has nothing to lose is hired to rescue the kidnapped son of an imprisoned international crime lord.`,
     rate: 5,
+    trailer: "https://www.youtube.com/embed/L6P3nI6VnlY",
   },
   
 ];

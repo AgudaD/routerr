@@ -1,24 +1,16 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import PropTypes from "prop-types";
-
-import movieList from "./MovieList";
-
-
-const MoviesList = ({ moviesArray }) => {
+import Movie from "./Movies";
+import { Link } from "react-router-dom";
+function MovieList({ movies, FilterBySearch }) {
   return (
-    <div className="row mt-2">
-      {moviesArray.map((movie, key) => (
-        <movieList movie={movie} key={key} />
-        
+    <div className="movie-container">
+      {movies.filter(FilterBySearch).map((movie, i) => (
+        <Link to={`movie/${movie.id}`}>
+          <Movie {...movie} key={movie.id} title={movie.title} />
+        </Link>
       ))}
-      
     </div>
   );
-};
+}
 
-MoviesList.propTypes = {
-  moviesArray: PropTypes.array.isRequired,
-};
-
-export default movieList;
+export default MovieList;

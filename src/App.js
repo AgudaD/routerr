@@ -1,53 +1,20 @@
-import React, { useState } from "react";
-import Movies from "./components/Movies";
-import { moviesList } from "./components/DummyData";
-import Rating from "./components/Rating";
-import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import Reels from "./components/Reels";
+import React from "react";
+import "./App.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MovieItem from "./components/MovieDt/MovieItem";
+
+import DefaultPage from "./Pages/DefaultPage";
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState("");
-
   return (
-    <>
-      <header>
-        <h1 className="vs">Visual Studios</h1>
-
-        <Rating />
-
-        <input
-          className="searchbar"
-          type="search"
-          placeholder="search..."
-          onChange={(event) => {
-            setSearchTerm(event.target.value);
-          }}
-        />
-      </header>
-      <div className="movie-container">
-        {moviesList
-          .filter((moviesList) =>  {
-            if (searchTerm === "") {
-              return moviesList;
-            } else if (
-              moviesList.title.toLowerCase().includes(searchTerm.toLowerCase())
-            ) {
-              return moviesList;
-            }
-          })
-          .map((moviesList, key) => (
-            <Movies {...moviesList} key={key} />
-          ))}
-          
-          <Routes>
-            <Route exact path="/" component={<DummyData />}/>
-            <Route path="/trails" component={<Reels />} />
-          </Routes>{""}
-          
-
-      </div>
-    </>
+    <Router>
+      <>
+        <Routes>
+          <Route exact path="/" element={<DefaultPage />} />
+          <Route path="/movie/:id" element={<MovieItem />} />
+        </Routes>
+      </>
+    </Router>
   );
 }
 
